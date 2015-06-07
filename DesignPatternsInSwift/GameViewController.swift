@@ -11,11 +11,13 @@ import UIKit
 class GameViewController: UIViewController {
 
   private var shapeViewFactory: ShapeViewFactory!
+  private var shapeFactory: ShapeFactory!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     shapeViewFactory = SquareShapeViewFactory(size: gameView.sizeAvailableForShapes())
+    shapeFactory = SquareShapeFactory(minProportion: 0.3, maxProportion: 0.8)
     
     beginNextTurn()
   }
@@ -25,21 +27,22 @@ class GameViewController: UIViewController {
   }
 
   private func beginNextTurn() {
-    let shape1 = SquareShape()
-    shape1.sideLength = Utils.randomBetweenLower(0.3, andUpper: 0.8)
-    let shape2 = SquareShape()
-    shape2.sideLength = Utils.randomBetweenLower(0.3, andUpper: 0.8)
-
-    let shapeViews = shapeViewFactory.makeShapeViewsForShapes((shape1, shape2))
+    let shapes = shapeFactory.createShapes()
+    
+    let shapeViews = shapeViewFactory.makeShapeViewsForShapes(shapes)
     
     shapeViews.0.tapHandler = {
       tappedView in
-      self.gameView.score += shape1.sideLength >= shape2.sideLength ? 1 : -1
+      
+      let square1 = shapes.0 as! SquareShape, square2 = shapes.1 as! SquareShape
+      self.gameView.score += square1.sideLength >= square2.sideLength ? 1 : -1
       self.beginNextTurn()
     }
     shapeViews.1.tapHandler = {
       tappedView in
-      self.gameView.score += shape2.sideLength >= shape1.sideLength ? 1 : -1
+      
+      let square1 = shapes.0 as! SquareShape, square2 = shapes.1 as! SquareShape
+      self.gameView.score += square2.sideLength >= square1.sideLength ? 1 : -1
       self.beginNextTurn()
     }
 

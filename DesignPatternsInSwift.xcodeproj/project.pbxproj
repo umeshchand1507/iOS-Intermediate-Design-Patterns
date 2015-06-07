@@ -18,6 +18,7 @@
 		5D23FD2619D23F9B003F5F4E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD2519D23F9B003F5F4E /* Shape.swift */; };
 		6A6728FA19EE21B60026F8C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6728F919EE21B60026F8C9 /* Utils.swift */; };
 		8321A15D1B22F24000D31769 /* ShapeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */; };
+		8321A15F1B242F2700D31769 /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A15E1B242F2700D31769 /* ShapeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		5D23FD2519D23F9B003F5F4E /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		6A6728F919EE21B60026F8C9 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewFactory.swift; sourceTree = "<group>"; };
+		8321A15E1B242F2700D31769 /* ShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				5D23FCFF19D21A02003F5F4E /* AppDelegate.swift */,
 				8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */,
+				8321A15E1B242F2700D31769 /* ShapeFactory.swift */,
 				5D23FD1F19D21CB4003F5F4E /* GameView.swift */,
 				5D23FD0119D21A02003F5F4E /* GameViewController.swift */,
 				5D23FD2519D23F9B003F5F4E /* Shape.swift */,
@@ -236,6 +239,7 @@
 				6A6728FA19EE21B60026F8C9 /* Utils.swift in Sources */,
 				8321A15D1B22F24000D31769 /* ShapeViewFactory.swift in Sources */,
 				5D23FD2419D223C0003F5F4E /* ShapeView.swift in Sources */,
+				8321A15F1B242F2700D31769 /* ShapeFactory.swift in Sources */,
 				5D23FD0019D21A02003F5F4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
