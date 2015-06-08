@@ -20,6 +20,8 @@
 		8321A15D1B22F24000D31769 /* ShapeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */; };
 		8321A15F1B242F2700D31769 /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A15E1B242F2700D31769 /* ShapeFactory.swift */; };
 		8321A1611B25838800D31769 /* ShapeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A1601B25838800D31769 /* ShapeViewBuilder.swift */; };
+		8321A1631B2588F200D31769 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A1621B2588F200D31769 /* Turn.swift */; };
+		8321A1651B2589FE00D31769 /* TurnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321A1641B2589FE00D31769 /* TurnController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewFactory.swift; sourceTree = "<group>"; };
 		8321A15E1B242F2700D31769 /* ShapeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
 		8321A1601B25838800D31769 /* ShapeViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeViewBuilder.swift; sourceTree = "<group>"; };
+		8321A1621B2588F200D31769 /* Turn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
+		8321A1641B2589FE00D31769 /* TurnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				8321A15C1B22F24000D31769 /* ShapeViewFactory.swift */,
 				8321A15E1B242F2700D31769 /* ShapeFactory.swift */,
 				8321A1601B25838800D31769 /* ShapeViewBuilder.swift */,
+				8321A1621B2588F200D31769 /* Turn.swift */,
+				8321A1641B2589FE00D31769 /* TurnController.swift */,
 				5D23FD1F19D21CB4003F5F4E /* GameView.swift */,
 				5D23FD0119D21A02003F5F4E /* GameViewController.swift */,
 				5D23FD2519D23F9B003F5F4E /* Shape.swift */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8321A1631B2588F200D31769 /* Turn.swift in Sources */,
 				5D23FD2619D23F9B003F5F4E /* Shape.swift in Sources */,
 				5D23FD0219D21A02003F5F4E /* GameViewController.swift in Sources */,
 				5D23FD2019D21CB4003F5F4E /* GameView.swift in Sources */,
@@ -245,6 +252,7 @@
 				5D23FD2419D223C0003F5F4E /* ShapeView.swift in Sources */,
 				8321A15F1B242F2700D31769 /* ShapeFactory.swift in Sources */,
 				5D23FD0019D21A02003F5F4E /* AppDelegate.swift in Sources */,
+				8321A1651B2589FE00D31769 /* TurnController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
