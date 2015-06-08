@@ -10,20 +10,17 @@ import Foundation
 
 class TurnController {
   
-  private let shapeFactory: ShapeFactory
-  private var shapeViewBuilder: ShapeViewBuilder
+  private let turnStrategy: TurnStrategy
   
   var currentTurn: Turn?
   var pastTurns: [Turn] = [Turn]()
   
-  init(shapeFactory: ShapeFactory, shapeViewBuilder: ShapeViewBuilder) {
-    self.shapeFactory = shapeFactory
-    self.shapeViewBuilder = shapeViewBuilder
+  init(turnStrategy: TurnStrategy) {
+    self.turnStrategy = turnStrategy
   }
   
   func beginNewTurn() -> (ShapeView, ShapeView) {
-    let shapes = shapeFactory.createShapes()
-    let shapeViews = shapeViewBuilder.buildShapeViewsForShapes(shapes)
+    let shapeViews = turnStrategy.makeShapeViewsForNextTurnGivenPastTurns(pastTurns)
     currentTurn = Turn(shapes: [shapeViews.0.shape, shapeViews.1.shape])
     return shapeViews
   }
